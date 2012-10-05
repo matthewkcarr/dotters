@@ -6,3 +6,15 @@ set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 autocmd FileType ruby compiler ruby
+"autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+"ruby
+"I dont think any of these are working
+"autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+"autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+"autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+"autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+""improve autocomplete menu color
+highlight Pmenu ctermbg=238 gui=bold
+"uncomment below to enable nerdtree by default
+"autocmd vimenter * NERDTree
+nmap <silent> <C-T> :NERDTreeToggle<CR>
