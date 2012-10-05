@@ -1,0 +1,9 @@
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/ruby-complete"]
+	path = bundle/ruby-complete
+	url = https://github.com/vim-ruby/vim-ruby.git
