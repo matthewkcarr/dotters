@@ -1,3 +1,4 @@
+"FOr getting vim to compile on LION see - https://gist.github.com/1109948
 call pathogen#infect()
 " Enable filetype-specific indenting
 " Enable filetype-specific plugins
@@ -17,4 +18,22 @@ autocmd FileType ruby compiler ruby
 highlight Pmenu ctermbg=238 gui=bold
 "uncomment below to enable nerdtree by default
 "autocmd vimenter * NERDTree
+" using control+T to toggle directory list
 nmap <silent> <C-T> :NERDTreeToggle<CR>
+set paste
+
+"for opening classes on current line in navigate mode by g and then f
+"set path+=/path/to/your/rails-application/app/**
+"set path+=/path/to/your/rails-application/lib/**
+"set suffixesadd=.rb
+"set includeexpr+=substitute(v:fname,'s$','','g')
+" or you can add substitution pattern s/ies$/y/g, s/ves$/f/g like this:
+" set includeexpr+=substitute(substitute(substitute(v:fname,'s$','','g'),'ie$','y','g'),'ve$','f','g')
+
+"use - http://www.vim.org/scripts/script.php?script_id=273
+":TlistToggle
+nmap <silent> <C-L> :TlistToggle<CR>
+autocmd BufEnter *
+	    \ if exists("b:rails_root") |
+	    \   let g:base_dir = b:rails_root |
+	    \ endif |
