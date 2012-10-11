@@ -1,0 +1,15 @@
+
+Branches
+if you see this:
+fatal: git checkout: updating paths is incompatible with switching branches.
+Did you intend to checkout 'origin/style_cleanup' which can not be resolved as commit?o
+
+do this:
+Well first, it seems that you didn't fetch the branches.
+
+Use git branch -a instead of git remote show origin.
+
+If the test branch is missing, then do git fetch --all.
+
+Now if you want to checkout a remote branch as a local branch with the same name, just do git checkout BRANCH_NAME, it will be automatically set up to track the origin.
+
