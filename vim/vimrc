@@ -37,3 +37,7 @@ autocmd BufEnter *
 	    \ if exists("b:rails_root") |
 	    \   let g:base_dir = b:rails_root |
 	    \ endif |
+set si
+set ts=2
+set shiftwidth=2
+
