@@ -10,6 +10,7 @@ alias start_postgres_alt="pg_ctl -D /usr/local/var/postgres -l logfile start"
 alias start_bind="sudo named -f -c /etc/named.conf"
 
 
+#alias git="hub "
 ##Create a db in postgres with username studentstock
 #createdb -O studentstock ss_development
 #createdb -O studentstock ss_test
