@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-ln -s ~/dotters/vim ~/.vim           
-ln -s ~/dotters/vim/vimrc ~/.vimrc
-ln -s ~/dotters/bash/bashrc ~/.bashrc
-ln -s ~/dotters/bash/aliases ~/.bash_aliases
-ln -s ~/dotters/bash/profile ~/.bash_profile
+export DOTTERS_PATH=/usr/local/src/github/dotters
+ln -s $DOTTERS_PATH/vim ~/.vim           
+ln -s $DOTTERS_PATH/vim/vimrc ~/.vimrc
+## ln -s ~/bash/bashrc ~/.bashrc
+cat ./bash/aliases >> ~/.bash_aliases
+cat ./bash/profile >> ~/.bash_profile
